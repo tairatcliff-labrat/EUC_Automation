@@ -1,0 +1,287 @@
+{
+    "deployNSX":  true,
+    "nsxDeployNetworking":  true,
+    "cloneHorizonVMs":  true,
+    "installConnectionServers":  true,
+    "buildNSXDesktopNetworks":  true,
+    "buildDesktopPools":  true,
+    "deploymentSourceDirectory":  "C:\\EUC-Automation\\Binaries",
+    "deploymentDestinationDirectory":  "C:\\Deploy\\",
+    "horizonInstallBinary":  "C:\\EUC-Automation\\Binaries\\VMware-viewconnectionserver-x86_64-7.2.0-5735293.exe",
+    "hvHelpeperModule":  "C:\\EUC-Automation\\Tools\\VMware.HV.Helper",
+    "horizonServiceAccount":  {
+                                  "Username":  "labrat\\svc_horizon",
+                                  "Password":  "P0werofCanberra!",
+                                  "horizonLocalAdminSID":  "S-1-5-21-1475424254-1434732907-2132518699-1151"
+                              },
+    "mgmtConfig":  {
+                       "mgmtvCenter":  "vc01.labrat.local",
+                       "mgmtDatacenterName":  "LabRat-HomeLab"
+                   },
+    "nsxConfig":  {
+                      "deployLoadBalancer":  true,
+                      "deployMicroSeg":  false,
+                      "enableMicroSeg":  false,
+                      "nsxManagerServer":  "nsx01.labrat.local",
+                      "nsxManagerPassword":  "P0werofCanberra!",
+                      "mgmtEdgeClusterName":  "Management",
+                      "mgmtEdgeDatastoreName":  "Lab-General",
+                      "mgmtNsxUplinkPortGroup01Name":  "MGMT-NSX-Uplink05",
+                      "mgmtNsxUplinkPortGroup02Name":  "MGMT-NSX-Uplink06",
+                      "mgmtNsxFolderName":  "EUC-NSX",
+                      "mgmtTor01UplinkProtocolAddress":  "172.16.145.1",
+                      "mgmtTor02UplinkProtocolAddress":  "172.16.146.1",
+                      "mgmtEdge01Uplink01PrimaryAddress":  "172.16.145.11",
+                      "mgmtEdge01Uplink02PrimaryAddress":  "172.16.146.11",
+                      "mgmtEdge02Uplink01PrimaryAddress":  "172.16.145.12",
+                      "mgmtEdge02Uplink02PrimaryAddress":  "172.16.146.12",
+                      "mgmtUplinkASN01":  "65000",
+                      "mgmtUplinkASN02":  "65000",
+                      "mgmtLocalASN":  "65004",
+                      "mgmtKeepAliveTimer":  "1",
+                      "mgmtHoldDownTimer":  "3",
+                      "mgmtEdgePassword":  "P0werofCanberra!",
+                      "mgmtTransitLsName":  "EUC MGMT Transport Network",
+                      "mgmtEdgeHAPortGroupName":  "HA-MGMT-EDGE",
+                      "mgmtEUC_MGMT_Network":  "EUC_MGMT_Network",
+                      "mgmtEdge01Name":  "MGMT-EUC-ESG01",
+                      "mgmtEdge02Name":  "MGMT-EUC-ESG02",
+                      "mgmtLdrName":  "MGMT-EUC-DLR01",
+                      "mgmtEUCTransportZoneName":  "EUC Global Transport Zone",
+                      "mgmtEdge01InternalPrimaryAddress":  "172.16.211.1",
+                      "mgmtEdge02InternalPrimaryAddress":  "172.16.211.2",
+                      "mgmtLdrUplinkPrimaryAddress":  "172.16.211.3",
+                      "mgmtLdrUplinkProtocolAddress":  "172.16.211.4",
+                      "mgmtLdrEUCMGMTPrimaryAddress":  "172.16.202.1",
+                      "mgmtDefaultSubnetBits":  "24",
+                      "mgmtDlrHADatastoreName":  "Lab-General",
+                      "horizonLbEdgeName":  "EUC-MGMT-LB",
+                      "horizonLbPrimaryIPAddress":  "172.16.202.2",
+                      "horizonVipIp":  "172.16.202.20",
+                      "horizonLbAlgorithm":  "round-robin",
+                      "horizonLbPoolName":  "HorizonPool",
+                      "horizonVipName":  "HorizonVIP",
+                      "horizonAppProfileName":  "HorizonAppProfile",
+                      "horizonVipProtocol":  "https",
+                      "horizonHttpsPort":  "443",
+                      "horizonLBMonitorName":  "default_https_monitor",
+                      "horizonSgName":  "SG-Horizon",
+                      "horizonSgDescription":  "Horizon Security Group",
+                      "horizonStName":  "ST-Horizon",
+                      "horizonVIP_IpSet_Name":  "HorizonVIP_IpSet",
+                      "horizonInternalESG_IpSet_Name":  "InternalESG_IpSet",
+                      "horizonFirewallSectionName":  "Horizon",
+                      "desktopNsxManagerServer":  "nsx02.labrat.local",
+                      "desktopNsxAdminPassword":  "P0werofCanberra!",
+                      "desktopvCenterUserName":  "administrator@vsphere.local",
+                      "desktopvCenterPassword":  "P0werofCanberra!",
+                      "desktopLsName":  "Desktop Network",
+                      "RdsLsName":  "RDS Network",
+                      "desktopLdrName":  "MGMT-EUC-DLR01",
+                      "desktopTransportZoneName":  "Comp Global Transport Zone",
+                      "desktopNetwork":  "172.16.230.0",
+                      "desktopNetworkPrimaryAddress":  "172.16.230.1",
+                      "desktopSubnetMask":  "255.255.255.0",
+                      "desktopRdsNetwork":  "172.16.240.0",
+                      "desktopRdsNetworkPrimaryAddress":  "172.16.240.1",
+                      "desktopRdsSubnetMask":  "255.255.255.0",
+                      "desktopDhcpServerAddress":  "172.16.100.5",
+                      "desktopEdge01Name":  "COMPUTE-ESG01",
+                      "desktopEdge01TransitIP":  "172.16.212.1",
+                      "desktopSgName":  "SG-Horizon",
+                      "desktopSgDescription":  "Horizon Security Group",
+                      "desktopStName":  "ST-Horizon",
+                      "desktopFirewallSectionName":  "HorizonDesktop",
+                      "useEdgeDHCPServer":  true
+                  },
+    "horizonConfig":  {
+                          "blockvcenters":  {
+                                                "ignoreSSLValidation":  true,
+                                                "vcName":  [
+                                                               "vc01.labrat.local",
+                                                               "vc02.labrat.local"
+                                                           ]
+                                            },
+                          "connectionServers":  {
+                                                    "deployLinkedClones":  true,
+                                                    "referenceSnapshot":  "LinkedClone",
+                                                    "hznReferenceVM":  "HorizonTemplate",
+                                                    "windowsLicenceKey":  "GCNDM-VHJY4-MD3XQ-6FTMW-HMGPB",
+                                                    "horizonLicensekey":  "H100A-00L43-08V8C-0K3UH-C554C",
+                                                    "horizonRecoveryPassword":  "P0werofCanberra!",
+                                                    "horizonRecoveryPasswordHint":  "Canberra",
+                                                    "mgmtDatacenterName":  "LabRat-HomeLab",
+                                                    "mgmtCluster":  "Management",
+                                                    "mgmtFolder":  "EUC_Management",
+                                                    "mgmtVDS":  "vDS-MGMT-10Gbe",
+                                                    "mgmtPortGroup":  "vxw-dvs-52-virtualwire-118-sid-5001-EUC_MGMT_Network",
+                                                    "mgmtDatastore":  "Lab-General",
+                                                    "diskFormat":  "Thin",
+                                                    "domainName":  "labrat.local",
+                                                    "domainJoinUser":  "svc_djoin",
+                                                    "domainJoinPass":  "P0werofCanberra!",
+                                                    "timeZone":  "255",
+                                                    "orgName":  "LabRat",
+                                                    "affinityRuleName":  "anti-affinity-rule-HorizonCS",
+                                                    "dnsServerIP":  "172.16.100.5",
+                                                    "gateway":  "172.16.202.1",
+                                                    "subnetMask":  "255.255.255.0",
+                                                    "horizonConnectionServerURL":  "horizon.labrat.local",
+                                                    "horizonCS":  [
+                                                                      {
+                                                                          "Name":  "cs01",
+                                                                          "IP":  "172.16.202.11"
+                                                                      },
+                                                                      {
+                                                                          "Name":  "cs02",
+                                                                          "IP":  "172.16.202.12"
+                                                                      },
+                                                                      {
+                                                                          "Name":  "cs03",
+                                                                          "IP":  "172.16.202.13"
+                                                                      },
+                                                                      {
+                                                                          "Name":  "cs04",
+                                                                          "IP":  "172.16.202.14"
+                                                                      },
+                                                                      {
+                                                                          "Name":  "cs05",
+                                                                          "IP":  "172.16.202.15"
+                                                                      },
+                                                                      {
+                                                                          "Name":  "cs06",
+                                                                          "IP":  "172.16.202.16"
+                                                                      },
+                                                                      {
+                                                                          "Name":  "cs07",
+                                                                          "IP":  "172.16.202.17"
+                                                                      }
+                                                                  ],
+                                                    "eventDB":  {
+                                                                    "configureEventDB":  true,
+                                                                    "servername":  "sql01.labrat.local",
+                                                                    "databasename":  "Horizon_Events",
+                                                                    "eventDbType":  "SQLSERVER",
+                                                                    "eventDbUser":  "svc_HorizonDB",
+                                                                    "eventDbPassword":  "P0werofCanberra!",
+                                                                    "eventDbPort":  "1433",
+                                                                    "eventDbTablePrefix":  "hzn",
+                                                                    "classifyEventsAsNewForDays":  "2",
+                                                                    "showEventsForTime":  "TWO_WEEKS"
+                                                                },
+                                                    "syslogserver":  {
+                                                                         "SyslogFileData":  {
+                                                                                                "enabled":  false,
+                                                                                                "uncPath":  "\\\\trunk-zfs01_pickup\\syslogpickup",
+                                                                                                "uncUserName":  "syslogservice",
+                                                                                                "uncPassword":  "PASSWORD",
+                                                                                                "uncDomain":  "yourdomain.local"
+                                                                                            },
+                                                                         "SyslogUDPData":  {
+                                                                                               "enabled":  true,
+                                                                                               "networkAddresses":  "vrli.labrat.local:514"
+                                                                                           }
+                                                                     }
+                                                },
+                          "certificateConfig":  {
+                                                    "requestCASignedCertificate":  true,
+                                                    "caName":  "ca01.labrat.local\\labrat-CA01",
+                                                    "commonName":  "horizon.labrat.local",
+                                                    "country":  "AU",
+                                                    "state":  "ACT",
+                                                    "city":  "Canberra",
+                                                    "organisation":  "LabRat",
+                                                    "organisationOU":  "HomeLab",
+                                                    "friendlyName":  "vdm",
+                                                    "templateName":  "VMware"
+                                                },
+                          "InstantCloneDomainAdministrator":  {
+                                                                  "useInstantClones":  true,
+                                                                  "userName":  "svc_horizoniclone",
+                                                                  "password":  "P0werofCanberra!",
+                                                                  "domain":  "labrat.local"
+                                                              },
+                          "pool":  {
+                                       "blockDatacenterName":  "LabRat-HomeLab",
+                                       "desktopPool":  [
+                                                           {
+                                                               "poolType":  "InstantClone",
+                                                               "PoolName":  "Win10Pool",
+                                                               "PoolDisplayName":  "Win10-Desktops",
+                                                               "Description":  "Win10",
+                                                               "UserAssignment":  "FLOATING",
+                                                               "vCenter":  "vc02.labrat.local",
+                                                               "ParentVM":  "Win10Template",
+                                                               "SnapshotVM":  "InstantClone",
+                                                               "VmFolder":  "LabRatVDI",
+                                                               "HostOrCluster":  "COMPUTE",
+                                                               "ResourcePool":  "COMPUTE",
+                                                               "NamingMethod":  "PATTERN",
+                                                               "Datastores":  "Lab-SSD",
+                                                               "NamingPattern":  "Win10F-{n:fixed=3}",
+                                                               "NetBiosName":  "labrat",
+                                                               "DomainAdmin":  "svc_horizoniclone",
+                                                               "networkPortGroup":  "vxw-dvs-33-virtualwire-23-sid-5301-Desktop Network",
+                                                               "MinimumCount":  "2",
+                                                               "MaximumCount":  "4",
+                                                               "SpareCount":  "0",
+                                                               "DefaultDisplayProtocol":  "PCOIP",
+                                                               "entitlement":  {
+                                                                                   "group":  "labrat\\domain users"
+                                                                               }
+                                                           },
+                                                           {
+                                                               "poolType":  "InstantClone",
+                                                               "PoolName":  "InstBeta2",
+                                                               "PoolDisplayName":  "Pools  Beta",
+                                                               "Description":  "Pool",
+                                                               "UserAssignment":  "FLOATING",
+                                                               "vCenter":  "vsphere6.yourdomain.local",
+                                                               "ParentVM":  "Win764base",
+                                                               "SnapshotVM":  "Working",
+                                                               "VmFolder":  "Desktops",
+                                                               "HostOrCluster":  "Desktops",
+                                                               "ResourcePool":  "Desktops",
+                                                               "NamingMethod":  "PATTERN",
+                                                               "Datastores":  "whsenfs01",
+                                                               "NamingPattern":  "InstBeta2-{n:fixed=3}",
+                                                               "NetBiosName":  "yourdomain",
+                                                               "DomainAdmin":  "instantadmin",
+                                                               "MinimumCount":  "1",
+                                                               "MaximumCount":  "2",
+                                                               "SpareCount":  "0",
+                                                               "DefaultDisplayProtocol":  "BLAST",
+                                                               "entitlement":  {
+                                                                                   "group":  "yourdomain\\ViewLoginUsers"
+                                                                               }
+                                                           },
+                                                           {
+                                                               "poolType":  "FullClone",
+                                                               "PoolName":  "FCAlpha03",
+                                                               "PoolDisplayName":  "Full Clone Alpha",
+                                                               "Description":  "FC OH Alpha",
+                                                               "UserAssignment":  "FLOATING",
+                                                               "vCenter":  "vsphere55.yourdomain.local",
+                                                               "VmFolder":  "Desktops",
+                                                               "HostOrCluster":  "bg01",
+                                                               "ResourcePool":  "bg01",
+                                                               "NamingMethod":  "PATTERN",
+                                                               "Datastores":  "whsenfs01",
+                                                               "NamingPattern":  "scfcalpha03-{n:fixed=3}",
+                                                               "DefaultDisplayProtocol":  "BLAST",
+                                                               "NetBiosName":  "yourdomain",
+                                                               "DomainAdmin":  "instantadmin",
+                                                               "MinimumCount":  "3",
+                                                               "MaximumCount":  "5",
+                                                               "SpareCount":  "0",
+                                                               "ParentVM":  "hzn72w764",
+                                                               "CustType":  "SYS_PREP",
+                                                               "SysPrepName":  "W7 Join Domain DHCP IP",
+                                                               "entitlement":  {
+                                                                                   "user":  "yourdomain\\myaccount"
+                                                                               }
+                                                           }
+                                                       ]
+                                   }
+                      }
+}

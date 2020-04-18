@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<properties>
+  <property name="ADDLOCAL" value="Web_Console,AirWatch_Services,AirWatch_Agent_Builder,AirWatch_Content_Delivery,AirWatch_Device_Scheduler,GEM_Services,AirWatch_GEM_InventoryService,AirWatch_Integration_Service,AirWatch_Messaging_Service,AirWatch_Policy_Engine,AirWatch_SMS_Service,AirWatch_Website,Bulk_Import_Service,Common,Content_Pull_Service,Default_Website,Event_Change_Queue_Monitor,MEG_Queue_Service,Cisco_ISE_Integration,AirWatch_Directory_Sync_Service,AirWatch_BackGround_Processor_Service,AirWatch_Smart_Group_Service,AirWatch_MarketPlace" />
+  <property name="INSTALLDIR" value="XXXXXINSTALLDIRXXXXX" />
+  <property name="IS_SQLSERVER_SERVER" value="XXXXXDBSERVERXXXXX" />
+  <property name="IS_SQLSERVER_AUTHENTICATION" value="1" />
+  <property name="IS_SQLSERVER_USERNAME" value="XXXXXDBUSERXXXXX" />
+  <property name="IS_SQLSERVER_DATABASE" value="XXXXXDBNAMEXXXXX" />
+  <property name="IS_SQLSERVER_PASSWORD" value="XXXXXDBPASSXXXXX" />
+  <property name="IS_NET_API_LOGON_USERNAME" value="" />
+  <property name="AWSERVER" value="XXXXXCNURLXXXXX" />
+  <property name="AWSERVERSCHEME" value="1" />
+  <property name="AWSERVERDS" value="XXXXXDSURLXXXXX" />
+  <property name="AWSERVERDSSCHEME" value="1" />
+  <property name="AWAPISSLOFFLOADED" value="" />
+  <property name="AWWEBSITE" value="Default Web Site" />
+  <property name="AWSITENUMBER" value="1" />
+  <property name="AWTCPPORT" value="80" />
+  <property name="ACMSERVERIP" value="0.0.0.0" />
+  <property name="ACMSERVERPORT" value="2001" />
+  <property name="ACMWCPORT" value="" />
+  <property name="AWCMCLUSTER" value="1" />
+  <property name="AWCMSSLOFFLOADED" value="1" />
+  <property name="AWCMUSEOWNCERT" value="" />
+  <property name="AWCMCERT" value="" />
+  <property name="AWAMIURL" value="http://localhost:9001" />
+  <property name="AWGPLAYSEARCHPROXY" value="1" />
+  <property name="AWGPHTTPHOST" value="" />
+  <property name="AWGPHTTPPORT" value="3128" />
+  <property name="AWGPHTTPPASSENABLED" value="" />
+  <property name="AWGPHTTPUSERNAME" value="" />
+  <property name="AWGPSOCKSHOST" value="" />
+  <property name="AWGPSOCKSPORT" value="1080" />
+  <property name="AWGPSOCKSPASSENABLED" value="" />
+  <property name="AWGPSOCKSUSERNAME" value="" />
+  <property name="AWSERVERTN" value="" />
+  <property name="AWSERVERTNINTIP" value="" />
+  <property name="AWSERVERTNLISTENIP" value="All Interfaces" />
+  <property name="AWSERVERTNPORT" value="8888" />
+  <property name="AWSERVERTNSCHEME" value="" />
+  <property name="AWTUNNELQUEUEINTIP" value="" />
+  <property name="AWTUNNELREMOTEQ" value="" />
+  <property name="AWTUNNELREMOTEQNAME" value="awtunnel" />
+  <property name="AWTUNNELSERVERFRIENDLYNAME" value="" />
+  <property name="AWRCTSPRIVATEPORT" value="7779" />
+  <property name="AWRCTSPUBLICPORT" value="7778" />
+  <property name="AWDEPLOYMODE" value="QA" />
+  <property name="AWIGNOREBACKUP" value="true" />
+  <property name="AWCERTAUTHTOKEN" value="XXXXXCERTTOKENXXXXX" />
+</properties>
